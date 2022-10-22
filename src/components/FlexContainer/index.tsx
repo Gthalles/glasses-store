@@ -6,15 +6,16 @@ interface IProps {
     direction?: string;
     alignItems?: string;
     justifyContent?: string;
+	marginAuto?: boolean;
 }
 
-function FlexContainer ({ children, direction, alignItems, justifyContent}: IProps) {
+function FlexContainer ({ children, direction, alignItems, justifyContent, marginAuto = false}: IProps) {
 	return (
 		<S.FlexContainer
 			direction={direction}
 			alignItems={alignItems}
 			justifyContent={justifyContent}
-            
+			marginAuto={marginAuto}
 		>
 			{children}
 		</S.FlexContainer>

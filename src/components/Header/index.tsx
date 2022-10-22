@@ -16,7 +16,7 @@ function Header () {
 					weight={900}
 				/>
 
-				<FlexContainer>
+				<FlexContainer alignItems="center">
 					<IconContainer
 						externalIcon="person"
 						size={35}

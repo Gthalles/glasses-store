@@ -9,11 +9,12 @@ interface ITextProps {
 }
 
 export const Text = styled.span<ITextProps>`
-    margin: auto 0;
+    display: flex;
+    align-items: center;
     height: 100%;
-    font-size: ${({size}) => size};
-    text-transform: ${({ transform }) => transform};
-    text-align: ${({align}) => align};
-    font-weight: ${({weight}) => weight};
+    font-size: ${({ size }) => size};
+    text-transform: ${({  transform  }) => transform};
+    text-align: ${({ align }) => align};
+    font-weight: ${({ weight }) => weight};
     color: ${({ color }) => color};
 `;
