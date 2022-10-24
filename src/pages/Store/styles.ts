@@ -2,13 +2,28 @@ import styled from "styled-components";
 import colors from "../../styles/colors";
 
 export const BackgroundPaper = styled.div`
-    width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 `;
 
 export const Main = styled.main`
-    width: 70%;
-    height: 80%;
+    display: flex;
     margin: auto;
-    background-color: ${colors.secondary};
+    max-width: 1440px;
+`;
+
+export const Aside = styled.aside`
+    width: 25%;
+    border-right: 1px solid ${colors.primary};
+`;
+
+export const Section = styled.section`
+    margin: auto 8px;
+    width: calc(75% - 16px);
+`;
+
+export const ProductsList = styled.div`
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 50px auto;
+    width: 100%;
 `;

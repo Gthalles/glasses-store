@@ -13,7 +13,6 @@ function Banner() {
 				<Text text="Até 12x sem juros!" size="40px" color={colors.primary} />
 				<div></div>
 			</S.Banner>
-			<div></div>
 		</S.BannerContainer>
 	);
 }
