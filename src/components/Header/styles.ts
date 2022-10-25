@@ -7,13 +7,3 @@ export const Header = styled.header`
     border-bottom: 1px solid;
     border-color: ${colors.primary};
 `;
-
-export const Container = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    width: calc(100% - 40px);
-    max-width: 1440px;
-    height: 50px;
-`;

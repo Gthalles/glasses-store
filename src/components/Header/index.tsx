@@ -8,7 +8,7 @@ import FlexContainer from "../FlexContainer";
 function Header () {
 	return (
 		<S.Header>
-			<S.Container>
+			<FlexContainer width="calc(100% - 40px)" margin="auto" justifyContent="space-between" alignItems="center">
 				<Text
 					text="Glasses Store"
 					color={colors.primary}
@@ -16,19 +16,22 @@ function Header () {
 					weight={900}
 				/>
 
-				<FlexContainer alignItems="center">
+				<FlexContainer height="50px" alignItems="center">
 					<IconContainer
 						externalIcon="person"
+						margin="auto 5px"
 						size={35}
 						color={colors.primary}
 					/>
+
 					<IconContainer
 						externalIcon="shopping_cart"
+						margin="auto 5px"
 						size={35}
 						color={colors.primary}
 					/>
 				</FlexContainer>
-			</S.Container>
+			</FlexContainer>
 		</S.Header>
 	);
 }

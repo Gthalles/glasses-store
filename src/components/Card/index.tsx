@@ -3,12 +3,13 @@ import * as S from "./styles";
 import colors from "../../styles/colors";
 import Text from "../Text";
 import { IGlasses } from "../../models/IGlasses";
+import FlexContainer from "../FlexContainer";
 
 function Card (props: IGlasses) {
 	return (
-		<S.Card key={props.id}>
+		<S.Card>
 			<S.CardImage src={props.image} />
-			<S.CardInfo>
+			<FlexContainer direction="column" justifyContent="space-between" width="100%" height="150px" padding="16px">
 				<Text
 					text={props.name}
 					size="20px"
@@ -32,7 +33,7 @@ function Card (props: IGlasses) {
 					size="22px"
 					color={colors.text}
 				/>
-			</S.CardInfo>
+			</FlexContainer>
 		</S.Card>
 	);
 }
