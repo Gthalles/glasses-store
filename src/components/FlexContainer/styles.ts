@@ -23,4 +23,5 @@ export const FlexContainer = styled.div<IFlexContainerProps>`
     width: ${({ width }) => width};
     max-width: 1440px;
     height: ${({ height }) => height};
+    background-color: ${({ backgroundColor }) => backgroundColor };
 `;

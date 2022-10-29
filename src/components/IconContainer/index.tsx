@@ -6,6 +6,7 @@ import Text from "../Text";
 
 interface IProps {
     externalIcon?: any;
+	className?: string;
     text?: string;
     color?: string;
     size?: string | number;
@@ -19,6 +20,7 @@ interface IProps {
 
 function IconContainer({
 	externalIcon,
+	className,
 	text = "",
 	size,
 	color = "#A1A1A1",
@@ -33,10 +35,10 @@ function IconContainer({
 
 	const icon = (
 		<S.ExternalIcon
-			className="material-symbols-outlined"
+			className={className || "material-symbols-outlined"}
 			size={size}
 		>
-			{externalIcon}
+			{externalIcon || ""}
 		</S.ExternalIcon>
 	);
 
