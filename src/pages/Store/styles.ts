@@ -12,6 +12,8 @@ export const Main = styled.main`
 `;
 
 export const Aside = styled.aside`
+    display: flex;
+    flex-direction: column;
     width: 25%;
     border-right: 1px solid ${colors.primary};
 `;

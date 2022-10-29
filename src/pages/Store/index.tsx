@@ -5,6 +5,7 @@ import Banner from "../../components/Banner";
 import Card from "../../components/Card";
 import Header from "../../components/Header";
 import Menu from "../../components/Menu";
+import Footer from "../../components/Footer";
 import { IGlasses } from "../../models/IGlasses";
 
 function Main () {
@@ -37,6 +38,7 @@ function Main () {
 					</S.ProductsList>
 				</S.Section>
 			</S.Main>
+			<Footer />
 		</S.BackgroundPaper>
 	);
 }
