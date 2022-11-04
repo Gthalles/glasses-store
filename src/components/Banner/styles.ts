@@ -4,7 +4,7 @@ import colors from "../../styles/colors";
 export const BannerContainer = styled.div`
     display: flex;
     margin: auto;
-    max-width: 1440px;
+    max-width: 1400px;
     background-color: ${colors.secondary};
 `;
 

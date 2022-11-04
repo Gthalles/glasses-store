@@ -11,9 +11,10 @@ interface IProps {
     alignItems?: string;
     justifyContent?: string;
 	backgroundColor?: string;
+	border?: string;
 }
 
-function FlexContainer ({ children, direction, alignItems, justifyContent, margin = "", padding = "", width = "", height = "", backgroundColor }: IProps) {
+function FlexContainer ({ children, direction, alignItems, justifyContent, margin = "", padding = "", width = "", height = "", backgroundColor, border }: IProps) {
 
 	return (
 		<S.FlexContainer
@@ -25,6 +26,7 @@ function FlexContainer ({ children, direction, alignItems, justifyContent, margi
 			alignItems={alignItems}
 			justifyContent={justifyContent}
 			backgroundColor={backgroundColor}
+			border={border}
 		>
 			{children}
 		</S.FlexContainer>

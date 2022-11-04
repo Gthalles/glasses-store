@@ -8,24 +8,25 @@ export const BackgroundPaper = styled.div`
 export const Main = styled.main`
     display: flex;
     margin: auto;
-    max-width: 1440px;
+    max-width: 1400px;
 `;
 
 export const Aside = styled.aside`
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 20%;
     border-right: 1px solid ${colors.primary};
 `;
 
 export const Section = styled.section`
     margin: auto 8px;
-    width: calc(75% - 16px);
+    width: calc(80% - 16px);
 `;
 
 export const ProductsList = styled.div`
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin: 50px auto;
     width: 100%;
+    max-width: 1400px;
 `;
