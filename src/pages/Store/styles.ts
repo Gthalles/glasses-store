@@ -14,6 +14,7 @@ export const Main = styled.main`
 export const Aside = styled.aside`
     display: flex;
     flex-direction: column;
+    padding-top: 120px;
     width: 20%;
     border-right: 1px solid ${colors.primary};
 `;

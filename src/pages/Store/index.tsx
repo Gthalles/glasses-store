@@ -6,6 +6,7 @@ import Card from "../../components/Card";
 import Header from "../../components/Header";
 import Menu from "../../components/Menu";
 import Footer from "../../components/Footer";
+import BrandFilter from "../../components/Filter/BrandFilter";
 import ColorFilter from "../../components/Filter/ColorFilter";
 import { IGlasses } from "../../models/IGlasses";
 
@@ -16,6 +17,7 @@ function Main () {
 			<Menu />
 			<S.Main>
 				<S.Aside>
+					<BrandFilter />
 					<ColorFilter />
 				</S.Aside>
 				<S.Section>

@@ -79,13 +79,13 @@ const colorsList: IColor[] = [
 function ColorFilter() {
 	return (
 		<FlexContainer
-			margin="130px auto"
+			margin="8px auto"
 			width="calc(100% - 32px)"
 			backgroundColor="#F9F9F0"
 			border={`1px solid ${colors.primary}`}
 		>
 			<S.ColorFilter>
-				<Text text="Selecionar armação por cor:" size="18px" weight={600} color={colors.primary} align="left" />
+				<Text text="Selecionar por cor:" size="18px" weight={600} color={colors.primary} align="left" />
 
 				<S.ColorsList>
 					{
