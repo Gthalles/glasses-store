@@ -3,10 +3,15 @@ import styled from "styled-components";
 
 interface IFlexContainerProps {
     children: ReactNode;
+    margin: string;
+    padding: string;
+	width: string;
+	height: string;
     direction?: string;
     alignItems?: string;
     justifyContent?: string;
-    marginAuto: boolean;
+    backgroundColor?: string;
+    border?: string;
 }
 
 export const FlexContainer = styled.div<IFlexContainerProps>`
@@ -14,7 +19,11 @@ export const FlexContainer = styled.div<IFlexContainerProps>`
     flex-direction: ${({ direction }) => direction};
     align-items: ${({ alignItems }) => alignItems};
     justify-content: ${({ justifyContent }) => justifyContent};
-    margin: ${({ marginAuto }) => marginAuto ? "auto" : 0};
-    max-width: 1440px;
-    height: 100%;
+    margin: ${({ margin }) => margin};
+    padding: ${({ padding }) => padding};
+    width: ${({ width }) => width};
+    max-width: 1400px;
+    height: ${({ height }) => height};
+    background-color: ${({ backgroundColor }) => backgroundColor};
+    border: ${({ border }) => border};
 `;

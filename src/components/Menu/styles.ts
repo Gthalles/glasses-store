@@ -7,10 +7,3 @@ export const Menu = styled.div`
     border-bottom: 1px solid;
     border-color: ${colors.primary};
 `;
-
-export const MenuContainer = styled.div`
-    margin: auto;
-    width: calc(100% - 200px);
-    max-width: 1440px;
-    height: 50px;
-`;

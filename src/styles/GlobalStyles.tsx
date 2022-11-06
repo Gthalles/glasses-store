@@ -1,6 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
+
 export default createGlobalStyle`
+@import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
+
     * {
         margin: 0;
         padding: 0;

@@ -7,21 +7,17 @@ import * as S from "./styles";
 function Menu () {
 	return (
 		<S.Menu>
-			<S.MenuContainer>
-				<FlexContainer justifyContent="space-between" marginAuto>
-					<Text text="Lentes de Contato" weight={600} color={colors.primary} />
+			<FlexContainer margin="auto" width="calc(100% - 400px)" height="50px" justifyContent="space-between">
+				<Text text="Lentes de Contato" weight={600} color={colors.primary} />
 
-					<Text text="Óculos de Sol" weight={600} color={colors.primary} />
+				<Text text="Óculos de Sol" weight={600} color={colors.primary} />
 
-					<Text text="Óculos de Grau" weight={600} color={colors.primary} />
+				<Text text="Óculos de Grau" weight={600} color={colors.primary} />
 
-					<Text text="Acessórios" weight={600} color={colors.primary} />
-
-					<Text text="Consultar Pedidos" weight={600} color={colors.primary} />
-				</FlexContainer>
-			</S.MenuContainer>
+				<Text text="Consultar Pedidos" weight={600} color={colors.primary} />
+			</FlexContainer>
 		</S.Menu>
 	);
 }
 
-export default Menu;
+export default Menu; 
