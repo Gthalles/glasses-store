@@ -11,6 +11,7 @@ interface IFlexContainerProps {
     alignItems?: string;
     justifyContent?: string;
     backgroundColor?: string;
+    border?: string;
 }
 
 export const FlexContainer = styled.div<IFlexContainerProps>`
@@ -21,7 +22,8 @@ export const FlexContainer = styled.div<IFlexContainerProps>`
     margin: ${({ margin }) => margin};
     padding: ${({ padding }) => padding};
     width: ${({ width }) => width};
-    max-width: 1440px;
+    max-width: 1400px;
     height: ${({ height }) => height};
-    background-color: ${({ backgroundColor }) => backgroundColor };
+    background-color: ${({ backgroundColor }) => backgroundColor};
+    border: ${({ border }) => border};
 `;
