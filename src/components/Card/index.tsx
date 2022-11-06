@@ -1,15 +1,15 @@
 import React from "react";
 import * as S from "./styles";
 import colors from "../../styles/colors";
+import Container from "../Container";
 import Text from "../Text";
 import { IGlasses } from "../../models/IGlasses";
-import FlexContainer from "../FlexContainer";
 
-function Card (props: IGlasses) {
+function Card(props: IGlasses) {
 	return (
 		<S.Card>
 			<S.CardImage src={props.image} />
-			<FlexContainer direction="column" justifyContent="space-between" width="100%" height="150px" padding="16px">
+			<Container flex direction="column" justifyContent="space-between" width="100%" height="150px" padding="16px">
 				<Text
 					text={props.name}
 					size="20px"
@@ -33,7 +33,7 @@ function Card (props: IGlasses) {
 					size="22px"
 					color={colors.text}
 				/>
-			</FlexContainer>
+			</Container>
 		</S.Card>
 	);
 }

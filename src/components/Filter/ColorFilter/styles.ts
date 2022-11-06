@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface IColor {
-    backgroundColor: string;
+	backgroundColor: string;
 }
 
 export const ColorFilter = styled.div`

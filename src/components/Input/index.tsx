@@ -3,17 +3,17 @@ import React from "react";
 import * as S from "./styles";
 
 interface IProps {
-    id: string;
-    type: string;
-    margin?: string;
-    width?: string;
-    height?: string;
-    color?: string;
-    backgroundColor?: string;
-    border?: string;
-    borderBottom?: string;
-    outlined?: string;
-    onchange?: (event: any) => void;
+	id: string;
+	type: string;
+	margin?: string;
+	width?: string;
+	height?: string;
+	color?: string;
+	backgroundColor?: string;
+	border?: string;
+	borderBottom?: string;
+	outlined?: string;
+	onchange?: (event: any) => void;
 }
 
 function Input({
