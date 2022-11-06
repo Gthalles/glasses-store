@@ -1,6 +1,7 @@
 import React from "react";
 import * as S from "./styles";
 import colors from "../../styles/colors";
+import { Link } from "react-router-dom";
 import Text from "../Text";
 import IconContainer from "../IconContainer";
 import Container from "../Container";
@@ -15,12 +16,14 @@ function Header () {
 				margin="auto"
 				width="calc(100% - 40px)"
 			>
-				<Text
-					text="Glasses Store"
-					color={colors.primary}
-					size="30px"
-					weight={900}
-				/>
+				<Link to="/">
+					<Text
+						text="Glasses Store"
+						color={colors.primary}
+						size="30px"
+						weight={900}
+					/>
+				</Link>
 
 				<Container flex height="50px" alignItems="center">
 					<IconContainer

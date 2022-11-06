@@ -25,4 +25,5 @@ export const ColorBlock = styled.div<IColor>`
     height: 20px;
     background-color: ${({ backgroundColor}) => backgroundColor };
     border: 1px solid gray;
+    cursor: pointer;
 `;

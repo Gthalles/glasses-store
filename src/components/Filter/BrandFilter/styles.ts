@@ -21,4 +21,5 @@ export const BrandBlock = styled.div`
     width: 40px;
     height: 20px;
     border: 1px solid gray;
+    cursor: pointer;
 `;

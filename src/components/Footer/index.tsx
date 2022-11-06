@@ -4,6 +4,7 @@ import colors from "../../styles/colors";
 import Text from "../Text";
 import IconContainer from "../IconContainer";
 import Container from "../Container";
+import { Link } from "react-router-dom";
 
 function Footer() {
 	return (
@@ -15,12 +16,14 @@ function Footer() {
 				alignItems="center"
 			>
 				<Container flex margin="30px auto" width="100%" height="250px" direction="column" alignItems="center">
-					<Text
-						text="Av. Alberto Carazzai, 1640 - Centro, Cornélio Procópio - PR, 86300-000"
-						align="left"
-						color={colors.primary}
-						size="16px"
-					/>
+					<a target="_blank" href="https://www.google.com.br/maps/dir//Av.+Alberto+Carazzai,+1640+-+Centro,+Corn%C3%A9lio+Proc%C3%B3pio+-+PR,+86300-000/@-24.3255114,-50.6494976,15z" rel="noreferrer">
+						<Text
+							text="Av. Alberto Carazzai, 1640 - Centro, Cornélio Procópio - PR, 86300-000"
+							align="left"
+							color={colors.primary}
+							size="16px"
+						/>
+					</a>
 
 					<Text
 						text="Loja virtual e consultoria para óculos e lentes de contato."
@@ -54,13 +57,15 @@ function Footer() {
 							color={colors.primary}
 						/>
 					</Container>
-					<Text
-						text="© 2022 Glasses Store. Todos os direitos reservados."
-						align="left"
-						color={colors.primary}
-						size="16px"
-						weight={600}
-					/>
+					<Link to="/">
+						<Text
+							text="© 2022 Glasses Store. Todos os direitos reservados."
+							align="left"
+							color={colors.primary}
+							size="16px"
+							weight={600}
+						/>
+					</Link>
 				</Container>
 			</Container>
 		</S.Footer>
