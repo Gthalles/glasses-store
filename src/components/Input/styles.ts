@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 interface IInputProps {
-    margin?: string;
-    width?: string;
-    height?: string;
-    color?: string;
-    backgroundColor?: string;
-    border?: string;
-    borderBottom?: string;
-    outlined?: string;
+	margin?: string;
+	width?: string;
+	height?: string;
+	color?: string;
+	backgroundColor?: string;
+	border?: string;
+	borderBottom?: string;
+	outlined?: string;
 }
 
 export const Input = styled.input<IInputProps>`

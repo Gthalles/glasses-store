@@ -2,11 +2,11 @@ import React from "react";
 import * as S from "./styles";
 import colors from "../../../styles/colors";
 import Text from "../../Text";
-import FlexContainer from "../../FlexContainer";
+import Container from "../../Container";
 
 interface IColor {
-    id: string;
-    backgroundColor: string;
+	id: string;
+	backgroundColor: string;
 }
 
 const colorsList: IColor[] = [
@@ -78,7 +78,8 @@ const colorsList: IColor[] = [
 
 function ColorFilter() {
 	return (
-		<FlexContainer
+		<Container
+			flex
 			margin="8px auto"
 			width="calc(100% - 32px)"
 			backgroundColor="#F9F9F0"
@@ -95,7 +96,7 @@ function ColorFilter() {
 					}
 				</S.ColorsList>
 			</S.ColorFilter>
-		</FlexContainer>
+		</Container>
 	);
 }
 

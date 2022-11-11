@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 interface ITextProps {
-    size?: string;
-    align?: string;
-    transform: string;
-    weight?: number;
-    color?: string;
+	size?: string;
+	align?: string;
+	transform: string;
+	weight?: number;
+	color?: string;
 }
 
 export const Text = styled.span<ITextProps>`

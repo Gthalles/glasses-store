@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 interface IButtonProps {
-    margin?: string;
-    width: string | number;
-    height: string | number;
-    backgroundColor?: string;
-    border?: string;
-    borderRadius?: string | number;
+	margin?: string;
+	width: string | number;
+	height: string | number;
+	backgroundColor?: string;
+	border?: string;
+	borderRadius?: string | number;
 }
 
 export const Button = styled.button<IButtonProps>`

@@ -5,17 +5,17 @@ import * as S from "./styles";
 import Text from "../Text";
 
 interface IProps {
-    externalIcon?: any;
+	externalIcon?: any;
 	className?: string;
-    text?: string;
-    color?: string;
-    size?: string | number;
-    linkReference?: string;
-    externalLink?: string;
-    margin?: string | number;
-    active?: boolean;
-    onclick?: () => void;
-    isHoverable?: boolean;
+	text?: string;
+	color?: string;
+	size?: string | number;
+	linkReference?: string;
+	externalLink?: string;
+	margin?: string | number;
+	active?: boolean;
+	onclick?: () => void;
+	isHoverable?: boolean;
 }
 
 function IconContainer({

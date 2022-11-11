@@ -4,21 +4,21 @@ import Text from "../Text";
 import * as S from "./styles";
 
 interface IProps {
-    text: string;
-    fontSize?: number;
-    fontWeight?: number;
-    margin?: string;
-    width: string | number;
-    height: string | number;
-    border?: string;
-    borderRadius?: string | number;
-    backgroundColor?: string;
-    onclick?: () => void;
+	text: string;
+	fontSize?: string;
+	fontWeight?: number;
+	margin?: string;
+	width: string | number;
+	height: string | number;
+	border?: string;
+	borderRadius?: string | number;
+	backgroundColor?: string;
+	onclick?: () => void;
 }
 
 function Button({
 	// eslint-disable-next-line max-len
-	text, margin, width, height, backgroundColor, fontSize, fontWeight, border, borderRadius, onclick,
+	text, margin, width, height, backgroundColor, fontSize = "14px", fontWeight, border, borderRadius, onclick,
 }: IProps) {
 	return (
 		<S.Button
@@ -33,7 +33,7 @@ function Button({
 		>
 			<Text
 				text={text}
-				size={fontSize || 14}
+				size={fontSize}
 				weight={fontWeight || 300}
 				color="#FFFFFF"
 			/>
