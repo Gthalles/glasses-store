@@ -17,7 +17,6 @@ function Main () {
 		<BackgroundPaper>
 			<Header />
 			<Menu />
-			<BestSellers />
 			<S.Main>
 				<S.Aside>
 					<BrandFilter />

@@ -34,11 +34,6 @@ function BestSellers() {
 			name: "Random Name #2",
 			image: "https://img.lojadomecanico.com.br/IMAGENS/64/876/187252172/oculosdeso-idany-1649516548.JPG",
 			description: "Hello World!",
-		},
-		{
-			name: "Família Real",
-			image: "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA12Ybpa.img?w=534&h=402&m=6&x=302&y=50&s=362&d=215",
-			description: "Sensacionalista? 5ª temporada de “The Crown” é o oposto: complacente com família real",
 		}
 	];
 
