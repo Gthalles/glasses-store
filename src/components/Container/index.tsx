@@ -2,22 +2,24 @@ import React, { ReactNode } from "react";
 import * as S from "./styles";
 
 interface IProps {
-    children: ReactNode;
+	children: ReactNode;
+	flex?: boolean;
 	margin?: string;
 	padding?: string;
 	width?: string;
 	height?: string;
-    direction?: string;
-    alignItems?: string;
-    justifyContent?: string;
+	direction?: string;
+	alignItems?: string;
+	justifyContent?: string;
 	backgroundColor?: string;
 	border?: string;
 }
 
-function FlexContainer ({ children, direction, alignItems, justifyContent, margin = "", padding = "", width = "", height = "", backgroundColor, border }: IProps) {
+function Container ({ children, flex, direction, alignItems, justifyContent, margin = "", padding = "", width = "", height = "", backgroundColor, border }: IProps) {
 
 	return (
-		<S.FlexContainer
+		<S.Container
+			flex={flex}
 			margin={margin}
 			padding={padding}
 			width={width}
@@ -29,8 +31,8 @@ function FlexContainer ({ children, direction, alignItems, justifyContent, margi
 			border={border}
 		>
 			{children}
-		</S.FlexContainer>
+		</S.Container>
 	);
 }
 
-export default FlexContainer;
+export default Container;

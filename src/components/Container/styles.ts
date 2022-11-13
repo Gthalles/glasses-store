@@ -1,21 +1,20 @@
-import { ReactNode } from "react";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
-interface IFlexContainerProps {
-    children: ReactNode;
-    margin: string;
-    padding: string;
+interface IContainerProps {
+	flex?: boolean;
+	margin: string;
+	padding: string;
 	width: string;
 	height: string;
-    direction?: string;
-    alignItems?: string;
-    justifyContent?: string;
-    backgroundColor?: string;
-    border?: string;
+	direction?: string;
+	alignItems?: string;
+	justifyContent?: string;
+	backgroundColor?: string;
+	border?: string;
 }
 
-export const FlexContainer = styled.div<IFlexContainerProps>`
-    display: flex;
+export const Container = styled.div<IContainerProps>`
+    display: ${({ flex }) => flex ? "flex" : "block" };
     flex-direction: ${({ direction }) => direction};
     align-items: ${({ alignItems }) => alignItems};
     justify-content: ${({ justifyContent }) => justifyContent};

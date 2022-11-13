@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 export const BrandFilter = styled.div`
     display: flex;
@@ -21,4 +21,5 @@ export const BrandBlock = styled.div`
     width: 40px;
     height: 20px;
     border: 1px solid gray;
+    cursor: pointer;
 `;

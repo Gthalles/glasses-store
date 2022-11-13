@@ -1,21 +1,36 @@
 import React from "react";
-import colors from "../../styles/colors";
-import FlexContainer from "../FlexContainer";
-import Text from "../Text";
 import * as S from "./styles";
+import colors from "../../styles/colors";
+import Container from "../Container";
+import Text from "../Text";
+import { Link } from "react-router-dom";
 
 function Menu () {
 	return (
 		<S.Menu>
-			<FlexContainer margin="auto" width="calc(100% - 400px)" height="50px" justifyContent="space-between">
-				<Text text="Lentes de Contato" weight={600} color={colors.primary} />
+			<Container
+				flex
+				justifyContent="space-between"
+				margin="auto"
+				width="calc(100% - 400px)"
+				height="50px"
+			>
+				<Link to="/">
+					<Text text="Lentes de Contato" weight={600} color={colors.primary} />
+				</Link>
 
-				<Text text="Óculos de Sol" weight={600} color={colors.primary} />
+				<Link to="/">
+					<Text text="Óculos de Sol" weight={600} color={colors.primary} />
+				</Link>
 
-				<Text text="Óculos de Grau" weight={600} color={colors.primary} />
+				<Link to="/">
+					<Text text="Óculos de Grau" weight={600} color={colors.primary} />
+				</Link>
 
-				<Text text="Consultar Pedidos" weight={600} color={colors.primary} />
-			</FlexContainer>
+				<Link to="/">
+					<Text text="Consultar Pedidos" weight={600} color={colors.primary} />
+				</Link>
+			</Container>
 		</S.Menu>
 	);
 }

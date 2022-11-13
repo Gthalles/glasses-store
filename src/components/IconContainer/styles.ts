@@ -1,13 +1,13 @@
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 interface IIconContainerProps{ 
-    text?: string;
-    margin?: string | number;
-    size?: string | number;
-    color?: string;
-    activeColor?: string;
-    active?: boolean;
-    hover?: boolean;
+	text?: string;
+	margin?: string | number;
+	size?: string | number;
+	color?: string;
+	activeColor?: string;
+	active?: boolean;
+	hover?: boolean;
 }
 
 export const IconContainer = styled.span<IIconContainerProps>`

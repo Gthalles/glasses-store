@@ -3,12 +3,12 @@ import React from "react";
 import * as S from "./styles";
 
 interface IProps {
-    text?: string;
-    size?: string ;
-    align?: string;
-    transform?: string;
-    weight?: number;
-    color?: string;
+	text?: string;
+	size?: string ;
+	align?: string;
+	transform?: string;
+	weight?: number;
+	color?: string;
 }
 
 function Text({
@@ -17,7 +17,7 @@ function Text({
 	return (
 		<S.Text
 			color={color}
-			size={size as string}
+			size={size}
 			align={align}
 			weight={weight}
 			transform={transform}

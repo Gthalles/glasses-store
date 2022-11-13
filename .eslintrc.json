@@ -8,8 +8,7 @@
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended"
     ],
-    "overrides": [
-    ],
+    "overrides": [],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaVersion": "latest",
@@ -20,10 +19,6 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "indent": [
-            "error",
-            "tab"
-        ],
         "quotes": [
             "error",
             "double"
@@ -31,6 +26,39 @@
         "semi": [
             "error",
             "always"
+        ],
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "@typescript-eslint/indent": [
+            "error",
+            "tab",
+            {
+                "ignoredNodes": [
+                    "JSXElement *",
+                    "JSXElement"
+                ]
+            }
+        ],
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".ts",
+                    ".tsx"
+                ]
+            }
+        ],
+        "react/jsx-indent": [
+            "error",
+            "tab"
+        ],
+        "react/jsx-indent-props": [
+            "error",
+            "tab"
         ]
     }
 }

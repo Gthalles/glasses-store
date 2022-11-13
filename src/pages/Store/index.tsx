@@ -2,6 +2,7 @@ import React from "react";
 import * as S from "./styles";
 import products from "../../assets/products/glasses";
 import Banner from "../../components/Banner";
+import BestSellers from "../../components/BestSellers";
 import Card from "../../components/Card";
 import Header from "../../components/Header";
 import Menu from "../../components/Menu";
@@ -9,16 +10,18 @@ import Footer from "../../components/Footer";
 import BrandFilter from "../../components/Filter/BrandFilter";
 import ColorFilter from "../../components/Filter/ColorFilter";
 import { IGlasses } from "../../models/IGlasses";
+import BackgroundPaper from "../../components/BackgroundPaper";
 
 function Main () {
 	return (
-		<S.BackgroundPaper>
+		<BackgroundPaper>
 			<Header />
 			<Menu />
 			<S.Main>
 				<S.Aside>
 					<BrandFilter />
 					<ColorFilter />
+					<BestSellers />
 				</S.Aside>
 				<S.Section>
 					<S.ProductsList>
@@ -44,7 +47,7 @@ function Main () {
 				</S.Section>
 			</S.Main>
 			<Footer />
-		</S.BackgroundPaper>
+		</BackgroundPaper>
 	);
 }
 
