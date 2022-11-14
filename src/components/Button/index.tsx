@@ -13,12 +13,13 @@ interface IProps {
 	border?: string;
 	borderRadius?: string | number;
 	backgroundColor?: string;
+	color?: string;
 	onclick?: () => void;
 }
 
 function Button({
 	// eslint-disable-next-line max-len
-	text, margin, width, height, backgroundColor, fontSize = "14px", fontWeight, border, borderRadius, onclick,
+	text, margin, width, height, backgroundColor, fontSize = "14px", fontWeight, border, borderRadius, onclick, color
 }: IProps) {
 	return (
 		<S.Button
@@ -35,7 +36,7 @@ function Button({
 				text={text}
 				size={fontSize}
 				weight={fontWeight || 300}
-				color="#FFFFFF"
+				color={color}
 			/>
 		</S.Button>
 	);
