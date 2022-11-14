@@ -11,7 +11,7 @@ const colors: IColors = {
 	primary: "#6b151e",
 	secondary: "#bfa101",
 	tertiary: "#521212",
-	text: "#a0a0a04f",
+	text: "#000",
 	light: "#FFF9E6",
 	dark: "#000",
 };
