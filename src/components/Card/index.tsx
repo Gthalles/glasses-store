@@ -13,7 +13,7 @@ function Card(props: IGlasses) {
 				<Text
 					text={props.name}
 					size="20px"
-					color={colors.tertiary}
+					color={colors.primary}
 					weight={600}
 					align="left"
 				/>
