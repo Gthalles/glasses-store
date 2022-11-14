@@ -31,6 +31,7 @@ function Header () {
 						margin="auto 5px"
 						size={35}
 						color={colors.primary}
+						linkReference="/welcome"
 					/>
 
 					<IconContainer
