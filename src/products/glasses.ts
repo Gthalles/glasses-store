@@ -1,4 +1,4 @@
-import { IGlasses } from "../../models/IGlasses";
+import { IGlasses } from "../models/IGlasses";
 
 const glasses: IGlasses[] = [
 	{  

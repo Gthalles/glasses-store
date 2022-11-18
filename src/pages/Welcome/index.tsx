@@ -21,7 +21,7 @@ function Welcome() {
 
 					<Container flex margin="72px auto" width="372px">
 						<Button text="Especificar" color={colors.primary} fontSize="20px" fontWeight={500} width="150px" height="50px" backgroundColor={colors.light} borderRadius="7px" />
-						<Button text="Prosseguir" color={colors.light} fontSize="20px" fontWeight={500} width="150px" height="50px" backgroundColor="transparent" border={`2px solid ${colors.light}`} borderRadius="7px" linkReference="/store"/>
+						<Button text="Prosseguir" color={colors.light} fontSize="20px" fontWeight={500} width="150px" height="50px" backgroundColor="transparent" border={`2px solid ${colors.light}`} borderRadius="7px" linkReference="/main"/>
 					</Container>
 				</Container>
 			</Container>

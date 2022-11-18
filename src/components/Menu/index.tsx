@@ -15,20 +15,20 @@ function Menu () {
 				width="calc(100% - 400px)"
 				height="50px"
 			>
-				<Link to="/">
+				<Link to="/contact-lenses">
 					<Text text="Lentes de Contato" weight={600} color={colors.primary} />
 				</Link>
 
-				<Link to="/">
+				<Link to="/sunglasses">
 					<Text text="Óculos de Sol" weight={600} color={colors.primary} />
 				</Link>
 
-				<Link to="/">
+				<Link to="/eyeglasses">
 					<Text text="Óculos de Grau" weight={600} color={colors.primary} />
 				</Link>
 
-				<Link to="/">
-					<Text text="Consultar Pedidos" weight={600} color={colors.primary} />
+				<Link to="/preferences">
+					<Text text="Preferências" weight={600} color={colors.primary} />
 				</Link>
 			</Container>
 		</S.Menu>
