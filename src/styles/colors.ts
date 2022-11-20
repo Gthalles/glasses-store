@@ -5,6 +5,7 @@ interface IColors {
 	text: string;
 	light: string;
 	dark: string;
+	success: string;
 }
 
 const colors: IColors = {
@@ -14,6 +15,7 @@ const colors: IColors = {
 	text: "#000",
 	light: "#FFF9E6",
 	dark: "#000",
+	success:"#53A653"
 };
 
 export default colors;
