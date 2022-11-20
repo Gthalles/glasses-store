@@ -2,9 +2,9 @@ import styled from "@emotion/styled";
 import { Modal } from "@mui/material";
 
 interface IModalProps {
-	backgroundColor: string | undefined;
-	width: string;
-	height: string;
+    backgroundColor: string | undefined;
+    width: string;
+    height: string;
 }
 
 export const ExternalModal = styled(Modal)`
@@ -14,7 +14,7 @@ export const ExternalModal = styled(Modal)`
     background-color: rgba(122, 122, 122, 0.5);
 `;
 
-export const ModalContainer = styled("main") <IModalProps>`
+export const ModalContainer = styled("main")<IModalProps>`
     width: ${({ width }) => width};
     height: ${({ height }) => height};
     background-color: ${({ backgroundColor }) => backgroundColor};

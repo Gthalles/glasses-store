@@ -1,20 +1,20 @@
 import styled from "@emotion/styled";
 
 interface IContainerProps {
-	flex?: boolean;
-	margin: string;
-	padding: string;
-	width: string;
-	height: string;
-	direction?: string;
-	alignItems?: string;
-	justifyContent?: string;
-	backgroundColor?: string;
-	border?: string;
+    flex?: boolean;
+    margin: string;
+    padding: string;
+    width: string;
+    height: string;
+    direction?: string;
+    alignItems?: string;
+    justifyContent?: string;
+    backgroundColor?: string;
+    border?: string;
 }
 
 export const Container = styled.div<IContainerProps>`
-    display: ${({ flex }) => flex ? "flex" : "block" };
+    display: ${({ flex }) => (flex ? "flex" : "block")};
     flex-direction: ${({ direction }) => direction};
     align-items: ${({ alignItems }) => alignItems};
     justify-content: ${({ justifyContent }) => justifyContent};

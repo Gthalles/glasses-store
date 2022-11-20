@@ -7,7 +7,7 @@ export const Header = styled.div`
     margin: 0 auto 10px auto;
     width: calc(100% - 64px);
     height: 51px;
-    border-bottom: 1px solid #CCC;
+    border-bottom: 1px solid #ccc;
 `;
 
 export const HeaderInformation = styled.div`
@@ -33,10 +33,10 @@ export const Product = styled.div`
 `;
 
 export const ProductImage = styled.img`
-   width: 100px;
-   height: 100px;
-   margin-right: 16px;
-   border-radius: 16px;
+    width: 100px;
+    height: 100px;
+    margin-right: 16px;
+    border-radius: 16px;
 `;
 
 export const ButtonContainer = styled.div`

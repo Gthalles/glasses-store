@@ -11,43 +11,41 @@ import ColorFilter from "../../components/Filter/ColorFilter";
 import { IGlasses } from "../../models/IGlasses";
 import BackgroundPaper from "../../components/BackgroundPaper";
 
-function ContactLenses () {
-	return (
-		<BackgroundPaper>
-			<Header />
-			<Menu />
-			<S.Main>
-				<S.Aside>
-					<BrandFilter />
-					<ColorFilter />
-					<BestSellers />
-				</S.Aside>
-				<S.Section>
-					<S.ProductsList>
-						{
-							products.map((product: IGlasses) => {
-								return (
-									<Card
-										key={product.id}
-										id={product.id}
-										name={product.name}
-										brand={product.brand}
-										category={product.category}
-										image={product.image}
-										price={product.price}
-										size={product.size}
-										color={product.color}
-										description={product.description}
-									/>		
-								);
-							})
-						}
-					</S.ProductsList>
-				</S.Section>
-			</S.Main>
-			<Footer />
-		</BackgroundPaper>
-	);
+function ContactLenses() {
+    return (
+        <BackgroundPaper>
+            <Header />
+            <Menu />
+            <S.Main>
+                <S.Aside>
+                    <BrandFilter />
+                    <ColorFilter />
+                    <BestSellers />
+                </S.Aside>
+                <S.Section>
+                    <S.ProductsList>
+                        {products.map((product: IGlasses) => {
+                            return (
+                                <Card
+                                    key={product.id}
+                                    id={product.id}
+                                    name={product.name}
+                                    brand={product.brand}
+                                    category={product.category}
+                                    image={product.image}
+                                    price={product.price}
+                                    size={product.size}
+                                    color={product.color}
+                                    description={product.description}
+                                />
+                            );
+                        })}
+                    </S.ProductsList>
+                </S.Section>
+            </S.Main>
+            <Footer />
+        </BackgroundPaper>
+    );
 }
 
 export default ContactLenses;

@@ -1,13 +1,13 @@
 import styled from "@emotion/styled";
 
-interface IIconContainerProps{ 
-	text?: string;
-	margin?: string | number;
-	size?: string | number;
-	color?: string;
-	activeColor?: string;
-	active?: boolean;
-	hover?: boolean;
+interface IIconContainerProps {
+    text?: string;
+    margin?: string | number;
+    size?: string | number;
+    color?: string;
+    activeColor?: string;
+    active?: boolean;
+    hover?: boolean;
 }
 
 export const IconContainer = styled.span<IIconContainerProps>`
@@ -18,9 +18,8 @@ export const IconContainer = styled.span<IIconContainerProps>`
     margin: ${({ margin }) => margin};
     padding: ${({ text }) => (text ? "5px" : 0)};
     min-width: ${({ text }) => (text ? "65px" : "auto")};
-    color: ${({
-		active, hover, color, activeColor,
-	}) => (active || hover ? activeColor : color)};
+    color: ${({ active, hover, color, activeColor }) =>
+        active || hover ? activeColor : color};
     cursor: pointer;
 `;
 
