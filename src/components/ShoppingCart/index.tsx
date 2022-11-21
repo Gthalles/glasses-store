@@ -166,7 +166,7 @@ function ShoppingCart(props: IShoppingCartProps) {
                         fontSize="18px"
                         borderRadius="20px"
                         border="none"
-                        linkReference="/completed-purchase"
+                        linkReference="/contact"
                         onclick={props.onClose}
                     />
                 </Container>

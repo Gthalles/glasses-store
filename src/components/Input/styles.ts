@@ -21,7 +21,7 @@ export const Input = styled.input<IInputProps>`
     background-color: ${({ backgroundColor }) => backgroundColor};
     border: ${({ border }) => border};
     border-bottom: ${({ borderBottom }) => borderBottom};
-    border-radius: 7.5px;
+    border-radius: 5px;
 
     :focus {
         outline: ${({ outlined }) => outlined};
