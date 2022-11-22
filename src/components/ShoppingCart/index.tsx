@@ -158,15 +158,15 @@ function ShoppingCart(props: IShoppingCartProps) {
                         />
                     </Container>
                     <Button
-                        text="CONCLUIR COMPRA"
-                        color={colors.light}
+                        text="Finalizar Compra"
                         width="400px"
-                        height="60px"
-                        backgroundColor={colors.success}
-                        fontSize="18px"
+                        height="50px"
+                        margin="50px 0 16px 0"
                         borderRadius="20px"
-                        border="none"
-                        linkReference="/completed-purchase"
+                        fontSize="20px"
+                        color="#FFF"
+                        backgroundColor={colors.success}
+                        linkReference="/contact"
                         onclick={props.onClose}
                     />
                 </Container>
