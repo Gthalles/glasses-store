@@ -26,19 +26,19 @@ function Address() {
                 <Container
                     flex
                     alignItems="center"
-                    margin="50px 0 auto 100px"
+                    margin="50px 0 auto 50px"
                     width="calc(100% - 100px)"
                 >
                     <IconContainer
                         externalIcon="home"
-                        size={65}
+                        size={50}
                         margin="0 15px 0 0"
                         color={colors.success}
                         isHoverable={false}
                     />
                     <Text
                         text="Endereço"
-                        size="60px"
+                        size="40px"
                         weight={600}
                         align="center"
                         color={colors.primary}
@@ -52,11 +52,11 @@ function Address() {
                     direction="column"
                 >
                     <S.FormControl width="calc(100% - 16px)">
-                        <Text text="CEP" size="20px" />
+                        <Text text="CEP" size="18px" color={colors.primary} />
                         <Input
-                            outlined="none"
-                            height="25px"
                             id="cep"
+                            outlined="none"
+                            height="30px"
                             type="text"
                             width="100%"
                             border="none"
@@ -66,11 +66,15 @@ function Address() {
 
                     <Container flex>
                         <S.FormControl>
-                            <Text text="Estado" size="20px" />
+                            <Text
+                                text="Estado"
+                                size="18px"
+                                color={colors.primary}
+                            />
                             <Input
-                                outlined="none"
-                                height="25px"
                                 id="uf"
+                                outlined="none"
+                                height="30px"
                                 type="text"
                                 width="100%"
                                 border="none"
@@ -79,11 +83,15 @@ function Address() {
                         </S.FormControl>
 
                         <S.FormControl>
-                            <Text text="Cidade" size="20px" />
+                            <Text
+                                text="Cidade"
+                                size="18px"
+                                color={colors.primary}
+                            />
                             <Input
-                                outlined="none"
-                                height="25px"
                                 id="city"
+                                outlined="none"
+                                height="30px"
                                 type="text"
                                 width="100%"
                                 border="none"
@@ -93,11 +101,11 @@ function Address() {
                     </Container>
 
                     <S.FormControl width="calc(100% - 16px)">
-                        <Text text="Rua" size="20px" />
+                        <Text text="Rua" size="18px" color={colors.primary} />
                         <Input
-                            outlined="none"
-                            height="25px"
                             id="street"
+                            outlined="none"
+                            height="30px"
                             type="text"
                             border="none"
                             borderBottom={`1px solid ${colors.primary}`}
@@ -106,11 +114,15 @@ function Address() {
 
                     <Container flex>
                         <S.FormControl width="calc(50% - 16px)">
-                            <Text text="Bairro" size="20px" />
+                            <Text
+                                text="Bairro"
+                                size="18px"
+                                color={colors.primary}
+                            />
                             <Input
-                                outlined="none"
-                                height="25px"
                                 id="neighborhood"
+                                outlined="none"
+                                height="30px"
                                 type="text"
                                 border="none"
                                 borderBottom={`1px solid ${colors.primary}`}
@@ -118,11 +130,15 @@ function Address() {
                         </S.FormControl>
 
                         <S.FormControl width="calc(20% - 16px)">
-                            <Text text="Nº" size="20px" />
+                            <Text
+                                text="Nº"
+                                size="18px"
+                                color={colors.primary}
+                            />
                             <Input
-                                outlined="none"
-                                height="25px"
                                 id="number"
+                                outlined="none"
+                                height="30px"
                                 type="text"
                                 border="none"
                                 borderBottom={`1px solid ${colors.primary}`}
@@ -130,11 +146,15 @@ function Address() {
                         </S.FormControl>
 
                         <S.FormControl width="calc(30% - 16px)">
-                            <Text text="Complemento" size="20px" />
+                            <Text
+                                text="Complemento"
+                                size="18px"
+                                color={colors.primary}
+                            />
                             <Input
-                                outlined="none"
-                                height="25px"
                                 id="complement"
+                                outlined="none"
+                                height="30px"
                                 type="text"
                                 border="none"
                                 borderBottom={`1px solid ${colors.primary}`}
@@ -151,7 +171,7 @@ function Address() {
                         fontSize="20px"
                         color="#FFF"
                         backgroundColor={colors.success}
-                        linkReference="/address"
+                        linkReference="/payment"
                     />
                 </Container>
             </Container>

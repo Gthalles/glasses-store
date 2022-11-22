@@ -11,5 +11,4 @@ export const FormControl = styled.div<IFormControl>`
     width: ${({ width }) => width ? width : "calc(50% - 16px)"};
     justify-content: space-between;
     margin: 8px;
-    background-color: red;
 `;

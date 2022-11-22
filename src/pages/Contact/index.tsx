@@ -26,19 +26,19 @@ function Contact() {
                 <Container
                     flex
                     alignItems="center"
-                    margin="50px 0 auto 100px"
+                    margin="50px 0 auto 50px"
                     width="calc(100% - 100px)"
                 >
                     <IconContainer
                         externalIcon="contact_page"
-                        size={65}
+                        size={50}
                         margin="0 15px 0 0"
                         color={colors.success}
                         isHoverable={false}
                     />
                     <Text
                         text="Contato"
-                        size="60px"
+                        size="40px"
                         weight={600}
                         align="center"
                         color={colors.primary}
@@ -52,7 +52,11 @@ function Contact() {
                 >
                     <Container flex>
                         <S.FormControl>
-                            <Text text="Nome:" size="20px" />
+                            <Text
+                                text="Nome:"
+                                size="18px"
+                                color={colors.primary}
+                            />
                             <Input
                                 id="name"
                                 outlined="none"
@@ -64,7 +68,11 @@ function Contact() {
                             />
                         </S.FormControl>
                         <S.FormControl>
-                            <Text text="Sobrenome:" size="20px" />
+                            <Text
+                                text="Sobrenome:"
+                                size="18px"
+                                color={colors.primary}
+                            />
                             <Input
                                 id="lastname"
                                 outlined="none"
@@ -79,7 +87,11 @@ function Contact() {
 
                     <Container flex>
                         <S.FormControl>
-                            <Text text="Email:" size="20px" />
+                            <Text
+                                text="Email:"
+                                size="18px"
+                                color={colors.primary}
+                            />
                             <Input
                                 id="email"
                                 outlined="none"
@@ -91,7 +103,11 @@ function Contact() {
                             />
                         </S.FormControl>
                         <S.FormControl>
-                            <Text text="Telefone:" size="20px" />
+                            <Text
+                                text="Telefone:"
+                                size="18px"
+                                color={colors.primary}
+                            />
                             <Input
                                 id="phone"
                                 outlined="none"
