@@ -1,14 +1,14 @@
 import styled from "@emotion/styled";
 
 interface IInputProps {
-	margin?: string;
-	width?: string;
-	height?: string;
-	color?: string;
-	backgroundColor?: string;
-	border?: string;
-	borderBottom?: string;
-	outlined?: string;
+    margin?: string;
+    width?: string;
+    height?: string;
+    color?: string;
+    backgroundColor?: string;
+    border?: string;
+    borderBottom?: string;
+    outlined?: string;
 }
 
 export const Input = styled.input<IInputProps>`
@@ -21,9 +21,9 @@ export const Input = styled.input<IInputProps>`
     background-color: ${({ backgroundColor }) => backgroundColor};
     border: ${({ border }) => border};
     border-bottom: ${({ borderBottom }) => borderBottom};
-    border-radius: 7.5px;
+    border-radius: 5px;
 
-    :focus { 
+    :focus {
         outline: ${({ outlined }) => outlined};
     }
 `;

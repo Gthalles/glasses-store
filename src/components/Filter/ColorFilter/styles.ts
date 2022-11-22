@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 interface IColor {
-	backgroundColor: string;
+    backgroundColor: string;
 }
 
 export const ColorFilter = styled.div`
@@ -23,7 +23,7 @@ export const ColorBlock = styled.div<IColor>`
     margin: 16px;
     width: 20px;
     height: 20px;
-    background-color: ${({ backgroundColor}) => backgroundColor };
+    background-color: ${({ backgroundColor }) => backgroundColor};
     border: 1px solid gray;
     cursor: pointer;
 `;

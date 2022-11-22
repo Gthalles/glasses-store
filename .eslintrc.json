@@ -29,11 +29,11 @@
         ],
         "indent": [
             "error",
-            "tab"
+            "space"
         ],
         "@typescript-eslint/indent": [
             "error",
-            "tab",
+            "space",
             {
                 "ignoredNodes": [
                     "JSXElement *",
@@ -54,11 +54,11 @@
         ],
         "react/jsx-indent": [
             "error",
-            "tab"
+            "space"
         ],
         "react/jsx-indent-props": [
             "error",
-            "tab"
+            "space"
         ]
     }
 }

@@ -1,48 +1,38 @@
-/* eslint-disable react/require-default-props */
 import React from "react";
 import * as S from "./styles";
 
 interface IProps {
-	id: string;
-	type: string;
-	margin?: string;
-	width?: string;
-	height?: string;
-	color?: string;
-	backgroundColor?: string;
-	border?: string;
-	borderBottom?: string;
-	outlined?: string;
-	onchange?: (event: any) => void;
+    id: string;
+    type: string;
+    margin?: string;
+    width?: string;
+    height?: string;
+    color?: string;
+    backgroundColor?: string;
+    border?: string;
+    borderBottom?: string;
+    outlined?: string;
+    placeholder?: string;
+    onchange?: (event: any) => void;
 }
 
-function Input({
-	id, type,
-	margin,
-	width,
-	height,
-	color,
-	backgroundColor,
-	border,
-	borderBottom,
-	outlined,
-	onchange,
-}: IProps) {
-	return (
-		<S.Input
-			id={id}
-			type={type}
-			margin={margin}
-			width={width}
-			height={height}
-			color={color}
-			backgroundColor={backgroundColor}
-			border={border}
-			borderBottom={borderBottom}
-			outlined={outlined}
-			onChange={onchange}
-		/>
-	);
+function Input(props: IProps) {
+    return (
+        <S.Input
+            id={props.id}
+            type={props.type}
+            placeholder={props.placeholder}
+            margin={props.margin}
+            width={props.width}
+            height={props.height}
+            color={props.color}
+            backgroundColor={props.backgroundColor}
+            border={props.border}
+            borderBottom={props.borderBottom}
+            outlined={props.outlined}
+            onChange={props.onchange}
+        />
+    );
 }
 
 export default Input;
