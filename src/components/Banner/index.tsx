@@ -16,7 +16,7 @@ function Banner() {
                     size="40px"
                     color={colors.primary}
                 />
-                <div></div>
+                <div>TESTE</div>
             </S.Banner>
         </S.BannerContainer>
     );
