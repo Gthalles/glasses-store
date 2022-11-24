@@ -1,7 +1,6 @@
 {
   "name": "glasses-store",
   "private": true,
-  "homepage": "https://gthalles.github.io/glasses-store/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
