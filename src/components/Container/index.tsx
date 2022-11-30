@@ -13,6 +13,7 @@ interface IProps {
     justifyContent?: string;
     backgroundColor?: string;
     border?: string;
+    borderBottom?: string;
 }
 
 function Container({
@@ -27,6 +28,7 @@ function Container({
     height = "",
     backgroundColor,
     border,
+    borderBottom
 }: IProps) {
     return (
         <S.Container
@@ -40,6 +42,7 @@ function Container({
             justifyContent={justifyContent}
             backgroundColor={backgroundColor}
             border={border}
+            borderBottom={borderBottom}
         >
             {children}
         </S.Container>

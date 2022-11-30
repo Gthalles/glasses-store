@@ -19,9 +19,9 @@ function Main() {
             <Menu />
             <S.Main>
                 <S.Aside>
+                    <BestSellers />
                     <BrandFilter />
                     <ColorFilter />
-                    <BestSellers />
                 </S.Aside>
                 <S.Section>
                     <S.ProductsList>

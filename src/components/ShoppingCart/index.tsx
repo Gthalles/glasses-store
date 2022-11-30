@@ -76,9 +76,11 @@ function ShoppingCart(props: IShoppingCartProps) {
                             <Container
                                 key={product.id}
                                 flex
-                                margin="25px auto"
+                                margin="25px auto 25px auto"
                                 width="calc(100% - 64px)"
-                                height="100px"
+                                height="120px"
+                                padding="10px 10px 0px 10px"
+                                borderBottom={`1px solid ${colors.primary}`}
                             >
                                 <S.ProductImage src={product.image} />
                                 <Container
@@ -87,7 +89,7 @@ function ShoppingCart(props: IShoppingCartProps) {
                                     justifyContent="space-between"
                                     margin="auto"
                                     width="calc(100% - 64px)"
-                                    height="100px"
+                                    height="90px"
                                 >
                                     <Container
                                         flex
