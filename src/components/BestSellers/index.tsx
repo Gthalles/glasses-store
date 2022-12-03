@@ -28,7 +28,8 @@ function Item(item: IItem) {
                 width="95px"
                 height="30px"
                 borderRadius="5px"
-                backgroundColor={colors.secondary}
+                backgroundColor={colors.success}
+                color="#FFF"
             />
         </Container>
     );
@@ -37,15 +38,20 @@ function Item(item: IItem) {
 function BestSellers() {
     const items = [
         {
-            name: "Random Name #1",
+            name: "Clubmaster RB3016 W0365 4N",
             image: "https://img.ltwebstatic.com/images3_pi/2022/06/08/1654671143b0aa893d1dc5ca4f1dc9f0fe58ff45f7_thumbnail_600x.webp",
             description: "Probably the most random thing you have ever seen!",
         },
         {
-            name: "Random Name #2",
-            image: "https://img.lojadomecanico.com.br/IMAGENS/64/876/187252172/oculosdeso-idany-1649516548.JPG",
-            description: "Hello World!",
+            name: "Óculos da Shein de armação redonda",
+            image: "https://img.ltwebstatic.com/images3_pi/2022/05/31/1653964867c0b960fc22e80a4929a0880e2d253714_thumbnail_600x.webp",
+            description: ""
         },
+        {
+            name: "Óculos de sol minimalista",
+            image: "https://img.ltwebstatic.com/images3_pi/2022/04/07/1649303186100416bb85fb203be1c4e586c98dcd62_thumbnail_600x.webp",
+            description: ""
+        }
     ];
 
     return (

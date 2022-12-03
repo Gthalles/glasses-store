@@ -11,6 +11,7 @@ interface IContainerProps {
     justifyContent?: string;
     backgroundColor?: string;
     border?: string;
+    borderBottom?: string;
 }
 
 export const Container = styled.div<IContainerProps>`
@@ -25,4 +26,6 @@ export const Container = styled.div<IContainerProps>`
     height: ${({ height }) => height};
     background-color: ${({ backgroundColor }) => backgroundColor};
     border: ${({ border }) => border};
+    border-bottom: ${({ borderBottom }) => borderBottom};
+    border-bottom-left-radius: ${({ borderBottom }) => borderBottom ? "15px" : "none"};
 `;

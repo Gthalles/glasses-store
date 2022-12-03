@@ -23,20 +23,53 @@ function BrandFilter() {
                 />
 
                 <S.BrandList>
-                    <S.BrandBlock />
-                    <S.BrandBlock />
-                    <S.BrandBlock />
-                    <S.BrandBlock />
-                    <S.BrandBlock />
-                    <S.BrandBlock />
-                    <S.BrandBlock />
-                    <S.BrandBlock />
-                    <S.BrandBlock />
-                    <S.BrandBlock />
-                    <S.BrandBlock />
-                    <S.BrandBlock />
-                    <S.BrandBlock />
-                    <S.BrandBlock />
+                    <S.BrandBlock>
+                        <Text text="Glasses Store" size="12px" weight={600} align="left" color={colors.primary} />
+                    </S.BrandBlock>
+
+                    <S.BrandBlock>
+                        <Text text="Ray-Ban" size="12px" weight={600} align="left" color={colors.primary} />
+                    </S.BrandBlock>
+
+                    <S.BrandBlock>
+                        <Text text="Chilli Beans" size="12px" weight={600} align="left" color={colors.primary} />
+                    </S.BrandBlock>
+
+                    <S.BrandBlock>
+                        <Text text="Oakley" size="12px" weight={600} align="left" color={colors.primary} />
+                    </S.BrandBlock>
+
+                    <S.BrandBlock>
+                        <Text text="Prada" size="12px" weight={600} align="left" color={colors.primary} />
+                    </S.BrandBlock>
+                    
+                    <S.BrandBlock>
+                        <Text text="Dior" size="12px" weight={600} align="left" color={colors.primary} />
+                    </S.BrandBlock>
+
+                    <S.BrandBlock>
+                        <Text text="Voda" size="12px" weight={600} align="left" color={colors.primary} />
+                    </S.BrandBlock>
+
+                    <S.BrandBlock>
+                        <Text text="Evoke" size="12px" weight={600} align="left" color={colors.primary} />
+                    </S.BrandBlock>
+
+                    <S.BrandBlock>
+                        <Text text="HB" size="12px" weight={600} align="left" color={colors.primary} />
+                    </S.BrandBlock>
+
+                    <S.BrandBlock>
+                        <Text text="Óticas Nacional" size="12px" weight={600} align="left" color={colors.primary} />
+                    </S.BrandBlock>
+                    
+                    <S.BrandBlock>
+                        <Text text="Carrera" size="12px" weight={600} align="left" color={colors.primary} />
+                    </S.BrandBlock>
+
+                    <S.BrandBlock>
+                        <Text text="Calvin Klein" size="12px" weight={600} align="left" color={colors.primary} />
+                    </S.BrandBlock>
                 </S.BrandList>
             </S.BrandFilter>
         </Container>

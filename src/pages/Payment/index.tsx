@@ -59,7 +59,6 @@ function Payment() {
                         />
                         <Input
                             id="card_number"
-                            placeholder="9999 9999 9999 9999"
                             outlined="none"
                             height="30px"
                             type="text"
@@ -78,7 +77,6 @@ function Payment() {
                             />
                             <Input
                                 id="validity"
-                                placeholder="MM/AA"
                                 outlined="none"
                                 height="30px"
                                 type="text"
@@ -94,7 +92,6 @@ function Payment() {
                             />
                             <Input
                                 id="cvc"
-                                placeholder="999"
                                 outlined="none"
                                 height="30px"
                                 type="text"
@@ -113,7 +110,6 @@ function Payment() {
                         />
                         <Input
                             id="owner_name"
-                            placeholder="Preencha com o nome do títular.."
                             outlined="none"
                             height="30px"
                             type="text"
