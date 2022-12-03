@@ -7,8 +7,7 @@ import Text from "../../components/Text";
 import Button from "../../components/Button";
 
 function Welcome() {
-    const text =
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+    const text = `Seja muito bem-vindo (a) ao nosso site. A Glasses Store é uma empresa de Cornélio Procópio, do ramo óptico, que atua principalmente na consultoria e venda online de lentes e óculos. Nossa meta atual é fazer com que você usufrua de nossos produtos de forma performática, duradoura e confortável. Para isso, trabalhamos com diversas marcas de armações do mercado e com base nas suas especificações, necessidades e preferencias, desenvolvemos óculos de grau e lentes de contato projetadas sobre medida para você. Caso tenha interesse neste atendimento personalizado, clique no botão “Especificar”. Caso queira prosseguir com um procedimento padrão de compra online, clique em “Prosseguir”.`;
 
     return (
         <Container
@@ -42,9 +41,9 @@ function Welcome() {
                     width="80%"
                     height="400px"
                 >
-                    <Text text={text} color={colors.light} size="20px" />
+                    <Text text={text} color={colors.light} size="22px" align="justify" />
 
-                    <Container flex margin="72px auto" width="372px">
+                    <Container flex justifyContent="space-evenly" margin="72px auto" width="372px">
                         <Button
                             text="Especificar"
                             color={colors.primary}
@@ -54,6 +53,7 @@ function Welcome() {
                             height="50px"
                             backgroundColor={colors.light}
                             borderRadius="7px"
+                            linkReference="/preferences"
                         />
                         <Button
                             text="Prosseguir"
