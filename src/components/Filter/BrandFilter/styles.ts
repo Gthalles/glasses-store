@@ -17,9 +17,8 @@ export const BrandList = styled.div`
 `;
 
 export const BrandBlock = styled.div`
-    margin: 16px;
-    width: 40px;
-    height: 20px;
-    border: 1px solid gray;
+    margin: 4px;
+    width: 65px;
+    height: 30px;
     cursor: pointer;
 `;
