@@ -154,7 +154,7 @@ function ShoppingCart(props: IShoppingCartProps) {
                             color={colors.primary}
                         />
                         <Text
-                            text="R$ 99,99"
+                            text="R$ 135,00"
                             size="20px"
                             color={colors.primary}
                         />

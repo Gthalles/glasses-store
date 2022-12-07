@@ -9,6 +9,7 @@ interface IInputProps {
     border?: string;
     borderBottom?: string;
     outlined?: string;
+    align?: boolean;
 }
 
 export const Input = styled.input<IInputProps>`
@@ -22,6 +23,7 @@ export const Input = styled.input<IInputProps>`
     border: ${({ border }) => border};
     border-bottom: ${({ borderBottom }) => borderBottom};
     border-radius: 5px;
+    text-align: ${({ align }) => align ? "center" : "initial"};
 
     :focus {
         outline: ${({ outlined }) => outlined};

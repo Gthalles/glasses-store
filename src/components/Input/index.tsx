@@ -14,6 +14,7 @@ interface IProps {
     outlined?: string;
     placeholder?: string;
     onchange?: (event: any) => void;
+    align?: boolean;
 }
 
 function Input(props: IProps) {
@@ -31,6 +32,7 @@ function Input(props: IProps) {
             borderBottom={props.borderBottom}
             outlined={props.outlined}
             onChange={props.onchange}
+            align={props.align}
         />
     );
 }
