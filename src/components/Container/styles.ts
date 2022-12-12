@@ -22,7 +22,7 @@ export const Container = styled.div<IContainerProps>`
     margin: ${({ margin }) => margin};
     padding: ${({ padding }) => padding};
     width: ${({ width }) => width};
-    max-width: 1400px;
+    max-width: 1980px;
     height: ${({ height }) => height};
     background-color: ${({ backgroundColor }) => backgroundColor};
     border: ${({ border }) => border};

@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import colors from "../../../styles/colors";
 
 export const BrandFilter = styled.div`
     display: flex;
@@ -21,4 +22,8 @@ export const BrandBlock = styled.div`
     width: 65px;
     height: 30px;
     cursor: pointer;
+    &:hover {
+        border-bottom: 1px solid ${colors.secondary};
+        transition: 1000ms;
+    }
 `;
