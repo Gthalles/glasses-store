@@ -213,7 +213,7 @@ function Preferences() {
                         fontSize="20px"
                         color="#FFF"
                         backgroundColor={colors.success}
-                        linkReference="/address"
+                        linkReference="/main"
                     />
                 </Container>
             </Container>

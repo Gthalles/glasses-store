@@ -15,14 +15,6 @@ function Menu() {
                 width="calc(100% - 400px)"
                 height="50px"
             >
-                <Link to="/contact-lenses">
-                    <Text
-                        text="Lentes de Contato"
-                        weight={600}
-                        color={colors.primary}
-                    />
-                </Link>
-
                 <Link to="/sunglasses">
                     <Text
                         text="Óculos de Sol"
@@ -34,6 +26,14 @@ function Menu() {
                 <Link to="/eyeglasses">
                     <Text
                         text="Óculos de Grau"
+                        weight={600}
+                        color={colors.primary}
+                    />
+                </Link>
+
+                <Link to="/contact-lenses">
+                    <Text
+                        text="Lentes de Contato"
                         weight={600}
                         color={colors.primary}
                     />
