@@ -33,7 +33,7 @@ function Contact() {
                         externalIcon="contact_page"
                         size={50}
                         margin="0 15px 0 0"
-                        color={colors.success}
+                        color={colors.primary}
                         isHoverable={false}
                     />
                     <Text

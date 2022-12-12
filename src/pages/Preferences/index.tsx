@@ -10,6 +10,7 @@ import Text from "../../components/Text";
 import Button from "../../components/Button";
 import Input from "../../components/Input";
 import Select from "../../components/Select";
+import PrescriptionTable from "../../components/PrescriptionTable";
 
 function Preferences() {
     return (
@@ -34,7 +35,7 @@ function Preferences() {
                         externalIcon="settings_account_box"
                         size={50}
                         margin="0 15px 0 0"
-                        color={colors.success}
+                        color={colors.primary}
                         isHoverable={false}
                     />
                     <Text
@@ -92,7 +93,6 @@ function Preferences() {
                                 <option>Com prismas</option>
                             </Select>
                         </S.CheckboxControl>
-                        
                     </Container>
 
                     <Container flex margin="20px 0">
@@ -201,6 +201,8 @@ function Preferences() {
                             />
                         </S.CheckboxControl>
                     </Container>
+
+                    <PrescriptionTable />
 
                     <Button
                         text="Consultar"
