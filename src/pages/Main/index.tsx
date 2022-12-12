@@ -1,7 +1,6 @@
 import React from "react";
 import * as S from "./styles";
 import products from "../../products/glasses";
-import Banner from "../../components/Banner";
 import BestSellers from "../../components/BestSellers";
 import Card from "../../components/Card";
 import Header from "../../components/Header";
